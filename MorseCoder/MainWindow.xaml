@@ -1,0 +1,29 @@
+﻿<Window x:Class="MorseCoder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MorseCoder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="633">
+    <Grid Margin="0,10,116,0">
+        <Button x:Name="mousen" Content="Morsen" HorizontalAlignment="Left" Margin="109,66,0,0" VerticalAlignment="Top" Height="40" Width="115" BorderBrush="#FF707070" MouseDown="mousen_MouseDown" MouseUp="mousen_MouseUp" />
+        <Label x:Name="label_" Content="Morse Code" HorizontalAlignment="Left" Margin="262,24,0,0" VerticalAlignment="Top" Height="43" Width="202" FontSize="24"/>
+        <Label x:Name="code_label" Content="" HorizontalAlignment="Left" Margin="286,68,0,0" VerticalAlignment="Top" Width="292" FontWeight="Bold" FontSize="18"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="136,117,0,0" VerticalAlignment="Top" Height="25" Width="52" Click="Button_Click"/>
+        <Label Content="Decoded" HorizontalAlignment="Left" Margin="262,106,0,0" VerticalAlignment="Top" Height="38" Width="108" FontSize="24"/>
+        <Label x:Name="decode_label" Content="" HorizontalAlignment="Left" Margin="286,150,0,0" VerticalAlignment="Top" Width="292" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="clear_button" Content="Clear" HorizontalAlignment="Left" Margin="143,152,0,0" VerticalAlignment="Top" Click="Clear_Button_Click" Width="38"/>
+        <Image HorizontalAlignment="Left" Height="198" Margin="46,197,0,0" VerticalAlignment="Top" Width="332" Source="/codec.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.101"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>
